@@ -32,23 +32,24 @@ project-static-website/
 
 🔧 Usage
 
-<b>1. Clone this repository</b>
+<u><b>1. Clone this repository</b></u>
 
 git clone https://github.com/EvaKN-PL/static-website-on-s3-AWS
 cd static-website-on-s3-AWS
 
-2. Initialize Terraform
+<b>2. Initialize Terraform</b>
 
 terraform init
 <img width="1267" height="667" alt="obraz" src="https://github.com/user-attachments/assets/10edf0eb-c331-4cca-b5ae-14ba22558034" />
 
 
-Validate configuration
+<b>3. Validate configuration</b>
 
 terraform validate
 
+<img width="795" height="122" alt="obraz" src="https://github.com/user-attachments/assets/67541637-a552-4dea-93e3-d1983681671a" />
 
-Plan the deployment
+<b>4. Plan the deployment</b>
 
 terraform plan -var-file="terraform.tfvars"
 

@@ -32,7 +32,7 @@ project-static-website/
 
 🔧 Usage
 
-<u><b>1. Clone this repository</b></u>
+<u>**1. Clone this repository**</u>
 
 git clone https://github.com/EvaKN-PL/static-website-on-s3-AWS
 cd static-website-on-s3-AWS

@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "bucket_name" {
     description = "Name of S3 bucket"
     type = string
-    default = "my-project-static-website-ewa"
+    default = "NAME_YOUR_BUCKET"
   
 }
 
@@ -21,3 +21,4 @@ variable "hosted_zone_id" {
     type = string
   
 }
+

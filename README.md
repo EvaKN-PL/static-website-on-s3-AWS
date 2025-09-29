@@ -34,8 +34,8 @@ project-static-website/
 
 <u>**1. Clone this repository**</u>
 
-git clone https://github.com/EvaKN-PL/static-website-on-s3-AWS
-cd static-website-on-s3-AWS
+- git clone https://github.com/EvaKN-PL/static-website-on-s3-AWS
+- cd static-website-on-s3-AWS
 
 <b>2. Initialize Terraform</b>
 

@@ -51,20 +51,43 @@ terraform validate
 
 <b>4. Plan the deployment</b>
 
-terraform plan -var-file="terraform.tfvars"
+terraform plan
+
+<img width="2109" height="528" alt="obraz" src="https://github.com/user-attachments/assets/d5e56777-bb96-4c9e-9437-163bcaca8951" />
 
 
-Apply changes
+<b>5. Apply changes</b>
 
-terraform apply -var-file="terraform.tfvars"
+terraform apply 
 
+<b>6. Upload website files to S3</b>
 
-Upload website files to S3
+aws s3 sync ./website/ s3://<your-bucket-name> --delete
+
+* Alternatively, you can upload your website files manually through the AWS Console.
 
 📌 Variables (terraform.tfvars example)
 aws_region    = "your_region"
 bucket_name   = "your_bucket_name"
 domain_name   = "your_domain"
 hosted_zone_id = "Z1234567890ABCDEFG"
+
+📤 Outputs
+
+After terraform apply, you will get:
+
+- CloudFront Domain Name
+- S3 Bucket Name
+- Custom Domain (Route 53)
+  
+🔐 Security Notes
+- The S3 bucket is private – only CloudFront (via OAC) can access it.
+- HTTPS is enforced using ACM + CloudFront.
+- Public access to S3 is fully blocked.
+
+📜 License
+
+This project is open-source under the MIT License.
+Feel free to use and adapt it for your own projects.
 
 
